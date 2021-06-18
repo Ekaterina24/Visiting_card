@@ -1,0 +1,833 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.fon {
+    height: 750px;
+    background-image: url(images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container--info {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 12px 15px 12px 15px;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+header .main-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 310px;
+    width: 97px;
+    height: 77px;
+}
+
+header .main__menu__item {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+header .main__menu__item:hover {
+    border-bottom: 1px solid white;
+}
+
+
+.main__phone {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.main__phone a {
+    display: block;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #EDEEE9;
+}
+
+.info {
+    padding: 200px 0 350px 0;
+    text-align: center;
+}
+
+.info span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 135%;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.info button {
+    background: #34547A;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 200px;
+    height: 45px;
+    outline: none;
+    border: 1px solid rgba(111, 111, 111, 0.25);
+    box-sizing: border-box;
+}
+
+.weather {
+    padding: 50px;
+    background: #404149;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather p {
+    display: inline;
+}
+
+.city, .city2, .city3 {
+    display: none;
+}
+
+.weather span, .weather p {
+    font-size: 35px;
+    line-height: 59px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.weather1, .weather2, .weather3 {
+    display: inline-block;
+}
+
+.tik-tak-wrp-tab.active {
+    margin-right: 20px;
+}
+
+#tik-tak-moscow {
+    margin-left: 20px;
+}
+
+.tik-tak-wrp-tab.active2 {
+    margin-right: 20px;
+}
+
+#tik-tak-barnaul {
+    margin-left: 20px;
+}
+
+.tik-tak-wrp-tab.active3 {
+    margin-right: 20px;
+}
+
+#tik-tak-vladivostok {
+    margin-left: 20px;
+}
+
+.burger {
+    display: none;
+}
+
+
+/*---------- 2ой блок -------------*/
+
+.container-our__work {
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our-work {
+    padding-bottom: 115px;
+    padding-top: 60px;
+}
+
+.our-work h2 {
+    max-width: 600px;
+    color: rgba(50, 50, 50, 1);
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 53px;
+    margin: 0 auto 32px auto;
+    text-align: center;
+}
+
+.our-work p {
+    color: rgba(153, 153, 153, 1);
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.our-work-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.our-work-item span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.our-work__button button {
+    background: #F7654A;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    padding: 12px 36px;
+    border: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.our-work-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0 95px 0;
+}
+
+.our-work-item span {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.our-work-item {
+    display: flex;
+}
+
+.our-work-item__text {
+    margin-top: 42px;
+    margin-left: 17px;
+}
+
+.our-work-item__text h3 {
+    margin-bottom: 10px;
+}
+
+/* ---------3ий блок ------------ */
+
+.choose {
+    background-color: #404149;
+    padding: 100px 0 70px 0;
+}
+
+.container-choose {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    border-bottom: 1px solid #9BD3EB;
+    padding-bottom: 90px;
+}
+
+
+.choose-text h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    max-width: 290px;
+    text-transform: uppercase;
+    margin-top: 34px;
+    margin-bottom: 47px;
+}
+
+.choose-text p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.choose-text a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+}
+
+.choose-image img {
+    width: 500px;
+    height: 400px;
+}
+
+.container-icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.icons-projects .icon-block span {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+
+.icons-projects span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.icon-projects {
+    max-width: 110px;
+}
+
+.icons-projects .icon-block  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image, .header2, .our-work__block img {
+    display: none;
+}
+
+/* ---------4ый блок ------------ */
+
+.container-our-big-project {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.our-big-project__title h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404149;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.our-big-project {
+    padding: 65px 0 0 0;
+}
+
+.our-big-project__cards {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-big-project__card hr {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    width: 55px;
+    height: 6px;
+    background: #F7654A;
+}
+
+.our-big-project__card {
+    max-width: 350px;
+}
+
+.our-big-project__card h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #404149;
+}
+
+.our-big-project__card p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.arrow {
+    display: none;
+}
+
+
+/* ---------5ый блок----------- */
+
+.our-big-project__icons {
+    background: #404149;
+    padding: 100px 0;
+    margin-top: 120px;
+}
+
+.icons-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+.our-big-project__icons img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.our-big-project__icon-text {
+    display: inline-block;
+    max-width: 65px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.our-big-project__icon-text span {
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 320px){
+    header .main-img img {
+        width: 48px;
+        height: 38px;
+    }
+
+    .header2 {
+        background-image: url(images/Фиксированная\ шапка\ бля\ мобилки.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    header .main-img {
+        width: 48px;
+        height: 38px;
+        margin-right: 110px;
+    }
+
+    header {
+        padding: 7px 14px 0 7px;
+        border-bottom: 0;
+    }
+
+    a.main__menu__item {
+        display: none;
+    }
+
+    .main__phone a {
+        font-size: 9px;
+        line-height: 11px;
+        vertical-align: middle;
+    }
+
+    .main__phone {
+        margin-right: 25px;
+    }
+
+    
+    .fon {
+        height: 256px;
+    }
+
+    .info {
+        padding: 108px 0 0 0;
+    }
+
+    .info span {
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 9px;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 10px;
+        line-height: 134.09%;
+        max-width: 185px;
+        margin: 10px auto 20px;
+    }
+
+    .info button {
+        width: 100px;
+        height: 24px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .fon {
+        padding: 7px 0 135px 0;
+    }
+
+    .burger {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .weather {
+        background-color: #F2F2F2;
+        display: inline-block;
+        padding: 36px 0 45px 0;
+        text-align: center;
+    }
+
+    .weather1 .active, .weather2 .active2, .weather3 .active3 {
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    #tik-tak-moscow, #tik-tak-vladivostok, #tik-tak-barnaul {
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .weather1 p, .weather2 p.tem2, .weather3 p.tem3, .weather1 p span, .weather2 p span, .weather3 p span {
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    /* --------------2ой блок --------------- */
+
+    .our-work {
+        padding-bottom: 70px;
+        padding-top: 22px;
+    }
+
+    .our-work h2 {
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 270px;
+        text-align: center;
+    }
+
+    .our-work p {
+        max-width: 230px;
+        margin-bottom: 37px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .our-work-items {
+        display: block;
+        margin-top: 0;
+        margin: 0;
+    }
+
+    .our-work-item {
+        display: block;
+    }
+
+    .our-work-item svg {
+        width: 81px;
+        height: 74px;
+        margin-bottom: 16px;
+    }
+
+    .our-work-item__text h3 {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+
+    .our-work-item__text {
+        margin: 0;
+    }
+
+    .our-work-item__text span {
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .our-work-item.hidden, .our-work__button {
+        display: none;
+    }
+
+    .our-work__block img {
+        display: block;
+        width: 33px;
+        height: 33px;
+    }
+
+    .our-work__block {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    /* ------------------3й блок ------------------ */
+
+    .choose {
+        padding: 28px 0 26px 0;
+    }
+
+    .container-choose {
+        display: block;
+    }
+
+    .choose-text h2 {
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 0;
+        margin-bottom: 34px;
+        text-align: center;
+    }
+
+    .choose-text p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .choose-text p span {
+        display: none;
+    }
+
+    .container-choose {
+        display: block;
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    .image {
+        display: block;
+        width: 187px;
+        height: 150px;
+        margin: 0 auto 17px auto;
+
+    }
+
+    .choose-image {
+        display: none;
+    }
+
+    .choose-text p {
+        max-width: 215px;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        margin: 0 auto;
+    }
+
+    .choose-text a {
+        margin-top: 24px;
+        margin-left: 8px;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .container-choose {
+        padding-bottom: 21px;
+    }
+
+    .icon-block img {
+        width: 13px;
+        height: 13px;
+    }
+
+    .icon-projects .icon-block span {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .icon-projects span {
+        font-size: 7px;
+        line-height: 11px;
+    }
+
+    .icon-projects.unic {
+        display: none;
+    }
+
+    .container-icons {
+        max-width: 265px;
+        margin-top: 26px;
+    }
+
+    .container-choose {
+        border: 0;
+    } 
+
+    .icons-projects {
+        border-top: 1px solid #9BD3EB;
+    }
+
+
+    /* ---------4ый блок ------------ */
+
+    .our-big-project {
+        padding: 14px 0 0 0;
+    }
+
+    .our-big-project__title h2 {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 225px;
+    }
+
+    .our-big-project__card.hidden {
+        display: none;
+    }
+
+    .our-big-project__card .image-project {
+        width: 214px;
+        height: 193px;
+        margin: 0 9px;
+        vertical-align: top;
+    }
+
+    .container-our-big-project {
+        text-align: center;
+    }
+
+    .our-big-project__cards {
+        margin-top: 0;
+        max-width: 223px;
+        margin: 0 auto;
+    }
+
+    .our-big-project__card hr {
+        margin: 24px 0 5px 0;
+        width: 55px;
+        height: 4px;
+    }
+
+    .our-big-project__card h3 {
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .our-big-project__card p {
+        text-align: left;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 32px;
+        max-width: 223px;
+    }
+
+    .arrow {
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        margin-top: 82px;
+    }
+
+    .our-big-progect__arrows {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        margin: 0 10px;
+        width: 297px;
+    } 
+
+    .our-big-progect__arrows {
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+
+    /* -----------5ый блок----------- */
+
+    .our-big-project__icons {
+        padding: 20px 0;
+        margin-top: 0;
+    }
+      
+    .our-big-project__icons img {
+        width: 21px;
+        height: 25px;
+    }
+
+    .our-big-project__icon.hidden {
+        display: none;
+    }
+    
+    .our-big-project__icon-text {
+        font-size: 10px;
+        margin-left: 5px;
+        max-width: 30px;
+        line-height: 15px;
+    }
+    
+    .our-big-project__icon-text span {
+        font-size: 12px;
+    }
+
+    .icons-container {
+        max-width: 255px;
+    }
+
+}

@@ -21,7 +21,7 @@ a {
 
 .fon {
     height: 750px;
-    background-image: url(images/Rectangle.png);
+    background-image: url(../images/Rectangle.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -514,6 +514,149 @@ header .main__menu__item:hover {
     display: none;
 }
 
+/* ---------7ой блок-------- */
+
+.articles {
+    padding: 30px 0 60px 0;
+}
+
+.articles__container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.articles h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.articles .all-articles a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.articles .all-articles {
+    background: #F7654A;
+    border-radius: 20px;
+    padding: 14px 19px;
+    display: inline-block;
+    margin: 25px auto 0;
+}
+
+.wrapper-articles-btn {
+    text-align:center;
+    width:100%;
+}
+
+.articles__text {
+    background: #404149;
+    padding: 21px 34px 16px;
+    margin-top: 15px;
+    margin: 15px auto 0;
+    max-width: 350px;
+}
+
+.articles__text__title img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.articles__text__title h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.articles__text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.articles__text .wrapper-more {
+    text-align: right;
+    width: 100%;
+}
+
+.articles__text .more a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.articles__text .more {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 13px 16px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.articles__article__author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+    margin-top: 50px;
+    text-align: center;
+}
+
+.articles__article__author span {
+    color: #F7654A;
+}
+
+.swip-slide {
+    width: 420px;
+    font-size: 0;
+}
+
+.swip .swiper-button-prev::after,
+.swip .swiper-button-next::after {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: 40px;
+    padding: 10px;
+}
+
+
+.swip .swiper-pagination {
+    top: 324px;
+}
+
+.swip .swiper-pagination-bullet {
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    font-style: 14px;
+    background-color: #F7654A;
+}
+
+.swip {
+    padding-bottom: 30px;
+}
 
 /* mobile */
 
@@ -524,7 +667,7 @@ header .main__menu__item:hover {
     }
 
     .header2 {
-        background-image: url(images/Фиксированная\ шапка\ бля\ мобилки.png);
+        background-image: url(../images/Фиксированная\ шапка\ для\ мобилки.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -955,5 +1098,83 @@ header .main__menu__item:hover {
     .reviews__hidden .p-hidden {
         display: none;
     }
+
+    /* -------7ой блок ---------- */
+
+    .articles {
+        padding: 22px 0 40px 0;
+    }
+    
+    .articles__container {
+        max-width: 250px;
+    }
+    
+    .articles h2 {
+        font-size: 16px;
+    }
+    
+    .articles .all-articles a {
+        font-size: 8px;
+        vertical-align: middle;
+    }
+    
+    .articles .all-articles {
+        padding: 4px 21px;
+        margin: 30px auto 0;
+    }
+    
+    .articles__text {
+        padding: 15px 20px 20px;
+        margin: 32px auto 0;
+        max-width: 200px;
+    }
+    
+    .articles__text__title h3 {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .articles__text__title img {
+        width: 19px;
+        height: 24px;
+    }
+    
+    .articles__text p {
+        font-size: 12px;
+        line-height: 21px;
+        margin-top: 8px;
+    }
+    
+    .articles__text .more a {
+        font-size: 9px;
+    }
+    
+    .articles__text .more {
+        padding: 5px 13px;
+        margin-top: 30px;
+    }
+    
+    .articles__article__author {
+        font-size: 14px;
+    
+        margin-top: 40px;
+    }
+    
+    .swip-slide {
+        width: 320px;
+    }
+    
+    .swip .swiper-pagination {
+        top: 342px;
+    }
+    
+    .swip .swiper-pagination-bullet {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* .swip {
+        padding-bottom: 30px;
+    } */
 
 }

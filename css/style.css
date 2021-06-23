@@ -658,6 +658,10 @@ header .main__menu__item:hover {
     padding-bottom: 30px;
 }
 
+/* -----7ой блок ВСЕ СТАТЬИ -------- */
+
+
+
 /* mobile */
 
 @media screen and (max-width: 320px){
@@ -1068,10 +1072,6 @@ header .main__menu__item:hover {
         margin: 0 auto;
     }
     
-    /* .reviews__hidden {
-        margin-top: 29px;
-    } */
-    
     .reviews__hidden img {
         text-align: center;
         margin: 0;
@@ -1172,9 +1172,5 @@ header .main__menu__item:hover {
         width: 30px;
         height: 30px;
     }
-    
-    /* .swip {
-        padding-bottom: 30px;
-    } */
 
 }

@@ -5,66 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
     <title>Project</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 
 <body>
     <div class="main">
-        <header>
+        <header class="header1">
             <div class="container">
                 <div class="main-img">
                     <img src="images/Bez_imeni-1 1.svg" alt="icon">
                 </div>
 
-                <a class="main__menu__item" href="#">Главная</a>
-                <a class="main__menu__item" href="#">Услуги</a>
-                <a class="main__menu__item" href="#">О нас</a>
-                <a class="main__menu__item" href="#">Наши проекты</a>
-                <a class="main__menu__item" href="#">Отзывы</a>
-                <a class="main__menu__item" href="#">Статьи</a>
-                <a class="main__menu__item" href="#">Контакты</a>
+                <div class="menu">
+                    <a class="main__menu__item" href="#main">Главная</a>
+                    <a class="main__menu__item" href="#services">Услуги</a>
+                    <a class="main__menu__item" href="#about-us">О нас</a>
+                    <a class="main__menu__item" href="#projects">Наши проекты</a>
+                    <a class="main__menu__item" href="#reviews">Отзывы</a>
+                    <a class="main__menu__item" href="#articles">Статьи</a>
+                    <a class="main__menu__item" href="#ontacts">Контакты</a>
 
-                <div class="main__phone">
-                    <a href="#">+7(987)234-65-98</a>
-                    <a href="#">+7(987)234-65-98</a>
+
+
+                    <div class="main__phone">
+                        <a href="#">+7(987)234-65-98</a>
+                        <a href="#">+7(987)234-65-98</a>
+                    </div>
                 </div>
-
-                <a class="burger" href="#"><img src="images/burger.svg" alt="burger"></a>
+                
             </div>
 
         </header>
 
         <header class="header2">
             <div class="container">
-                <div class="main-img">
-                    <img src="images/Bez_imeni-1 1.svg" alt="icon">
+                <div class="main-menu">
+                    <div class="main-img">
+                        <img src="images/Bez_imeni-1 1.svg" alt="icon">
+                    </div>
+
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
                 </div>
 
-                <a class="main__menu__item" href="#">Главная</a>
-                <a class="main__menu__item" href="#">Услуги</a>
-                <a class="main__menu__item" href="#">О нас</a>
-                <a class="main__menu__item" href="#">Наши проекты</a>
-                <a class="main__menu__item" href="#">Отзывы</a>
-                <a class="main__menu__item" href="#">Статьи</a>
-                <a class="main__menu__item" href="#">Контакты</a>
+                <div class="menu__body">
+                    <div class="menu-list">
+                        <a class="main__menu__item" href="#main">Главная</a>
+                        <a class="main__menu__item" href="#services">Услуги</a>
+                        <a class="main__menu__item" href="#about-us">О нас</a>
+                        <a class="main__menu__item" href="#projects">Наши проекты</a>
+                        <a class="main__menu__item" href="#reviews">Отзывы</a>
+                        <a class="main__menu__item" href="#articles">Статьи</a>
+                        <a class="main__menu__item" href="#ontacts">Контакты</a>
+                    </div>
 
-                <div class="main__phone">
-                    <a href="#">+7(987)234-65-98</a>
-                    <a href="#">+7(987)234-65-98</a>
+                    <div class="main__phone">
+                        <a href="#">+7(987)234-65-98</a>
+                        <a href="#">+7(987)234-65-98</a>
+                    </div>
                 </div>
 
-                <a class="burger" href="#"><img src="images/burger.svg" alt="burger"></a>
             </div>
 
         </header>
 
-        <div class="info">
+        <div class="info" id="main">
             <div class="container--info">
                 <span>Передовая IT студия</span>
                 <h1>Мы создаем легкие решения
@@ -80,29 +93,30 @@
     <div class="fon"></div>
 
     <div class="weather">
+        <div class="container-weather">
+            <div class="weather1">
+                <span class="tik-tak-wrp-tab active">msk<span id="tik-tak-moscow"></span></span>
+                <span class="city"></span>
+                <p class="tem"><span class="temp"></span>°C</p>
+            </div>
 
-        <div class="weather1">
-            <span class="tik-tak-wrp-tab active">msk<span id="tik-tak-moscow"></span></span>
-            <span class="city"></span>
-            <p class="tem"><span class="temp"></span>°C</p>
-        </div>
+            <div class="weather2">
+                <span class="tik-tak-wrp-tab active2">bnl<span id="tik-tak-barnaul"></span></span>
+                <span class="city2"></span>
+                <p class="tem2"><span class="temp2"></span>°C</p>
+            </div>
 
-        <div class="weather2">
-            <span class="tik-tak-wrp-tab active2">bnl<span id="tik-tak-barnaul"></span></span>
-            <span class="city2"></span>
-            <p class="tem2"><span class="temp2"></span>°C</p>
-        </div>
-
-        <div class="weather3">
-            <span class="tik-tak-wrp-tab active3">vdk<span id="tik-tak-vladivostok"></span></span>
-            <span class="city3"></span>
-            <p class="tem3"><span class="temp3"></span>°C</p>
+            <div class="weather3">
+                <span class="tik-tak-wrp-tab active3">vdk<span id="tik-tak-vladivostok"></span></span>
+                <span class="city3"></span>
+                <p class="tem3"><span class="temp3"></span>°C</p>
+            </div>
         </div>
 
 
     </div>
 
-    <div class="our-work">
+    <div class="our-work" id="services">
         <div class="container-our__work">
             <h2>Мы создаем сайты<br> для крупных корпораций</h2>
             <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
@@ -240,7 +254,7 @@
 
     </div>
 
-    <div class="choose">
+    <div class="choose" id="about-us">
         <div class="container-choose">
             <div class="choose-text">
                 <h2>Почему нас выбирают</h2>
@@ -304,7 +318,7 @@
     </div>
 
 
-    <div class="our-big-project">
+    <div class="our-big-project" id="projects">
         <div class="container-our-big-project">
             <div class="our-big-project__title">
                 <h2>Наши самые большие проекты</h2>
@@ -389,7 +403,7 @@
     </div>
 
 
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="reviews__container">
             <h2>Отзывы</h2>
             <div class="reviews__block">
@@ -433,7 +447,7 @@
         </div>
     </div>
 
-    <div class="wrapper-articles">
+    <div class="wrapper-articles" id="articles">
         <div class="articles">
             <div class="articles__container">
                 <h2 id="back">Статьи с кейсами</h2>
@@ -593,7 +607,7 @@
         </div>
     </div>
 
-    <div class="form">
+    <div class="form" id="contacts">
         <div class="container-form">
             <h2>ХОТИТЕ С НАМИ РАБОТАТЬ?</h2>
             <div class="form-text">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</div>
@@ -630,7 +644,7 @@
         </div>
     </div>
 
-    <div class="form-hidden">
+    <div class="form-hidden" id="contacts">
         <div class="container-form-wrapper">
             <h2>ХОТИТЕ С НАМИ РАБОТАТЬ?</h2>
             <div class="form-text">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</div>
@@ -696,7 +710,7 @@
                 <div class="contacts-block three">
                     <img src="images/clock.svg" alt="clock">
                     <div class="contacts-block-title">время работы:</div>
-                    <div class="contacts-block-text unic">ПН-СБ 10:00 - 20:00</div>
+                    <div class="contacts-block-text unic2">ПН-СБ 10:00 - 20:00</div>
                 </div>
 
                 <div class="contacts-block four">

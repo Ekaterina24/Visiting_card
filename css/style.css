@@ -1888,16 +1888,16 @@ body._lock {
     }
 
     .our-work h2 {
-        font-size: 16px;
+        font-size: 21px;
         line-height: 23px;
-        max-width: 270px;
+        max-width: 344px;
         text-align: center;
     }
 
     .our-work p {
-        max-width: 230px;
         margin-bottom: 37px;
-        font-size: 13px;
+        max-width: 300px;
+        font-size: 18px;
         line-height: 21px;
     }
 
@@ -1918,7 +1918,7 @@ body._lock {
     }
 
     .our-work-item__text h3 {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 17px;
         text-transform: uppercase;
         margin-bottom: 16px;
@@ -1948,7 +1948,8 @@ body._lock {
     .our-work__block {
         display: flex;
         justify-content: space-between;
-        margin: 0 10px;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     /* ------------------3й блок ------------------ */
@@ -1970,7 +1971,7 @@ body._lock {
     }
 
     .choose-text p {
-        font-size: 13px;
+        font-size: 18px;
         line-height: 21px;
     }
 
@@ -2007,7 +2008,7 @@ body._lock {
         margin-top: 24px;
         margin-left: 8px;
         display: inline-block;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 20px;
     }
 
@@ -2016,18 +2017,18 @@ body._lock {
     }
 
     .icon-block img {
-        width: 13px;
-        height: 13px;
+        width: 26px;
+        height: 26px;
     }
 
     .icon-projects .icon-block span {
         display: inline-block;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 20px;
     }
 
     .icon-projects span {
-        font-size: 7px;
+        font-size: 11px;
         line-height: 11px;
     }
 
@@ -2036,7 +2037,7 @@ body._lock {
     }
 
     .container-icons {
-        max-width: 265px;
+        max-width: 360px;
         margin-top: 26px;
     }
 
@@ -2090,14 +2091,14 @@ body._lock {
 
     .our-big-project__card h3 {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 20px;
     }
 
     .our-big-project__card p {
         text-align: left;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 19px;
+        line-height: 20px;
         margin-bottom: 32px;
         max-width: 223px;
     }
@@ -2134,18 +2135,18 @@ body._lock {
     }
     
     .our-big-project__icon-text {
-        font-size: 10px;
+        font-size: 14px;
         margin-left: 5px;
         max-width: 30px;
         line-height: 15px;
     }
     
     .our-big-project__icon-text span {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .icons-container {
-        max-width: 255px;
+        max-width: 300px;
     }
 
 
@@ -2159,21 +2160,21 @@ body._lock {
     }
 
     .reviews__block img {
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 14px;
     }
     
     .reviews__container {
-        max-width: 250px;
+        max-width: 300px;
     }
     
     .reviews h2 {
-        font-size: 16px;
+        font-size: 22px;
         margin: 0;
     }
     
     .reviews__block p {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 15px;
         margin-top: 18px;
     }
@@ -2194,14 +2195,14 @@ body._lock {
     .reviews__hidden .hidden {
         display: block;
         margin: 0 auto;
-        height: 97px;
+        height: 100px;
         margin-bottom: 17px;
     }
     
     .reviews__hidden p {
-        max-width: 210px;
-        font-size: 12px;
-        line-height: 16px;
+        max-width: 250px;
+        font-size: 18px;
+        line-height: 20px;
         margin: 0 auto;
     }
 
@@ -2216,26 +2217,26 @@ body._lock {
     }
     
     .articles__container {
-        max-width: 250px;
+        max-width: 350px;
     }
     
     .articles h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .articles .all-articles a {
-        font-size: 8px;
+        font-size: 16px;
         vertical-align: middle;
     }
     
     .articles .all-articles {
         padding: 4px 21px;
-        margin: 30px auto 0;
+        margin: 30px auto 10px;
     }
     
     .articles__text {
         padding: 15px 20px 20px;
-        margin: 32px auto 0;
+        margin: 40px auto 0;
         max-width: 200px;
     }
     
@@ -2250,13 +2251,13 @@ body._lock {
     }
     
     .articles__text p {
-        font-size: 12px;
+        font-size: 17px;
         line-height: 21px;
         margin-top: 8px;
     }
     
     .articles__text .more a {
-        font-size: 9px;
+        font-size: 13px;
     }
     
     .articles__text .more {
@@ -2275,7 +2276,7 @@ body._lock {
     }
     
     .swip .swiper-pagination {
-        top: 342px;
+        top: 0;
     }
     
     .swip .swiper-pagination-bullet {
@@ -2291,7 +2292,7 @@ body._lock {
     }
 
     .container-form-wrapper {
-        max-width: 260px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
@@ -2302,7 +2303,7 @@ body._lock {
     }
 
     .form-hidden h2 {
-        font-size: 16px;
+        font-size: 19px;
 
         font-style: normal;
         font-weight: bold;
@@ -2312,7 +2313,7 @@ body._lock {
     }
 
     .form-hidden .form-text {
-        font-size: 10px;
+        font-size: 12px;
 
         margin-top: 8px;
         margin-bottom: 25px;
@@ -2335,7 +2336,7 @@ body._lock {
 
     label {
         display: block;
-        font-size: 14px;
+        font-size: 17px;
         text-align: left;
     }
 
@@ -2373,7 +2374,7 @@ body._lock {
     }
 
     .form-btn button {
-        font-size: 8px;
+        font-size: 13px;
         letter-spacing: 0.05em;
         color: #000000;
 
@@ -2405,7 +2406,7 @@ body._lock {
     }
 
     .contacts h2 {
-        font-size: 16px;
+        font-size: 22px;
         margin-bottom: 25px;
     }
 

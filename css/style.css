@@ -485,7 +485,7 @@ header .main__menu__item:hover {
     margin-right: 19px;
 }
 
-.reviews__block p {
+.reviews__block a {
     display: inline-block;
     font-style: normal;
     font-weight: bold;
@@ -494,14 +494,11 @@ header .main__menu__item:hover {
     color: #F7654A;
     text-transform: uppercase;
     margin-top: 38px;
+    background: none;
 }
 
-.reviews__block:hover {
+.reviews__block:hover button {
     cursor: pointer;
-}
-
-.reviews__hidden {
-    margin-top: 29px;
 }
 
 .reviews__hidden img {
@@ -1428,9 +1425,8 @@ body._lock {
         margin: 0;
     }
     
-    .reviews__block p {
+    .reviews__block button {
         font-size: 12px;
-        line-height: 15px;
         margin-top: 18px;
     }
 
@@ -1445,6 +1441,10 @@ body._lock {
 
     .reviews__hidden .first {
         display: none;
+    }
+
+    .reviews__block:hover {
+        cursor: pointer;
     }
 
     .reviews__hidden .hidden {
@@ -1541,23 +1541,22 @@ body._lock {
 
     /* -----8ой блок -------- */
 
-    .form-hidden {
+    .form {
         padding: 18px 0;
         background: #34547A;
     }
 
-    .container-form-wrapper {
-        max-width: 260px;
+    /* .container-form-wrapper {
+        max-width: 360px;
         margin: 0 auto;
-    }
+    } */
 
     .container-form {
-        max-width: 170px;
+        max-width: 255px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .form-hidden h2 {
+    .form h2 {
         font-size: 16px;
 
         font-style: normal;
@@ -1567,7 +1566,7 @@ body._lock {
         text-align: center;
     }
 
-    .form-hidden .form-text {
+    .form .form-text {
         font-size: 10px;
 
         margin-top: 8px;
@@ -1581,26 +1580,18 @@ body._lock {
 
     }
 
-    .form {
-        display: none;
-    }
-
-    .form-hidden {
-        display: block;
-    }
-
     label {
         display: block;
-        font-size: 14px;
+        font-size: 20px;
         text-align: left;
+        max-width: 170px;
     }
 
     input {
         margin-top: 9px;
         margin-left: 0;
-        width: 150px;
+        max-width: 170px;
         height: 27px;
-        vertical-align: left;
         font-size: 14px;
     }
 
@@ -1613,8 +1604,8 @@ body._lock {
     textarea {
         margin-top: 16px;
 
-        width: 147px;
-        height: 120px;
+        width: 167px;
+        height: 140px;
         font-size: 14px;
     }
 
@@ -1629,7 +1620,7 @@ body._lock {
     }
 
     .form-btn button {
-        font-size: 8px;
+        font-size: 12px;
         letter-spacing: 0.05em;
         color: #000000;
 
@@ -2224,7 +2215,7 @@ body._lock {
         margin: 0;
     }
     
-    .reviews__block p {
+    .reviews__block button {
         font-size: 15px;
         line-height: 15px;
         margin-top: 18px;
@@ -2241,6 +2232,10 @@ body._lock {
 
     .reviews__hidden .first {
         display: none;
+    }
+
+    .reviews__block:hover {
+        cursor: pointer;
     }
 
     .reviews__hidden .hidden {
@@ -2337,24 +2332,23 @@ body._lock {
 
     /* -----8ой блок -------- */
 
-    .form-hidden {
+    .form {
         padding: 18px 0;
         background: #34547A;
     }
 
-    .container-form-wrapper {
-        max-width: 300px;
+    /* .container-form-wrapper {
+        max-width: 360px;
         margin: 0 auto;
-    }
+    } */
 
     .container-form {
-        max-width: 170px;
+        max-width: 352px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .form-hidden h2 {
-        font-size: 19px;
+    .form h2 {
+        font-size: 22px;
 
         font-style: normal;
         font-weight: bold;
@@ -2363,7 +2357,7 @@ body._lock {
         text-align: center;
     }
 
-    .form-hidden .form-text {
+    .form .form-text {
         font-size: 12px;
 
         margin-top: 8px;
@@ -2377,26 +2371,18 @@ body._lock {
 
     }
 
-    .form {
-        display: none;
-    }
-
-    .form-hidden {
-        display: block;
-    }
-
     label {
         display: block;
-        font-size: 17px;
+        font-size: 20px;
         text-align: left;
+        max-width: 250px;
     }
 
     input {
         margin-top: 9px;
         margin-left: 0;
-        width: 150px;
+        max-width: 250px;
         height: 27px;
-        vertical-align: left;
         font-size: 14px;
     }
 
@@ -2409,7 +2395,7 @@ body._lock {
     textarea {
         margin-top: 16px;
 
-        width: 147px;
+        width: 247px;
         height: 120px;
         font-size: 14px;
     }
@@ -2425,7 +2411,7 @@ body._lock {
     }
 
     .form-btn button {
-        font-size: 13px;
+        font-size: 12px;
         letter-spacing: 0.05em;
         color: #000000;
 
@@ -3021,7 +3007,7 @@ body._lock {
         margin: 0;
     }
     
-    .reviews__block p {
+    .reviews__block button {
         font-size: 15px;
         line-height: 15px;
         margin-top: 18px;
@@ -3029,6 +3015,10 @@ body._lock {
 
     .reviews__block {
         margin: 0 auto;
+    }
+
+    .reviews__block:hover {
+        cursor: pointer;
     }
     
     .reviews__hidden img {
@@ -3134,23 +3124,22 @@ body._lock {
 
     /* -----8ой блок -------- */
 
-    .form-hidden {
+    .form {
         padding: 18px 0;
         background: #34547A;
     }
 
-    .container-form-wrapper {
+    /* .container-form-wrapper {
         max-width: 360px;
         margin: 0 auto;
-    }
+    } */
 
     .container-form {
-        max-width: 342px;
+        max-width: 352px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .form-hidden h2 {
+    .form h2 {
         font-size: 22px;
 
         font-style: normal;
@@ -3160,7 +3149,7 @@ body._lock {
         text-align: center;
     }
 
-    .form-hidden .form-text {
+    .form .form-text {
         font-size: 12px;
 
         margin-top: 8px;
@@ -3174,24 +3163,17 @@ body._lock {
 
     }
 
-    .form {
-        display: none;
-    }
-
-    .form-hidden {
-        display: block;
-    }
-
     label {
         display: block;
         font-size: 20px;
         text-align: left;
+        max-width: 250px;
     }
 
     input {
         margin-top: 9px;
         margin-left: 0;
-        width: 250px;
+        max-width: 250px;
         height: 27px;
         font-size: 14px;
     }

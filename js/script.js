@@ -168,4 +168,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// ОТЗЫВЫ
 
+function openbox(box) {
+    display = document.getElementById('box').style.display;
+    if (display == "none") {
+        document.getElementById('box').style.display = "block";
+    } else {
+        document.getElementById('box').style.display = "none";
+    }
+}
+
+function openbox2(box2) {
+    display = document.getElementById('box2').style.display;
+    if (display == "none") {
+        document.getElementById('box2').style.display = "block";
+    } else {
+        document.getElementById('box2').style.display = "none";
+    }
+}
+
+function openbox3(box3) {
+    display = document.getElementById('box3').style.display;
+    if (display == "none") {
+        document.getElementById('box3').style.display = "block";
+    } else {
+        document.getElementById('box3').style.display = "none";
+    }
+}
+
+function openbox4(box4) {
+    display = document.getElementById('box4').style.display;
+    if (display == "none") {
+        document.getElementById('box4').style.display = "block";
+    } else {
+        document.getElementById('box4').style.display = "none";
+    }
+}

@@ -105,7 +105,8 @@ header .main__menu__item:hover {
     margin-top: 30px;
 }
 
-.info button {
+.info a {
+    display: inline-block;
     background: #34547A;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
@@ -114,11 +115,9 @@ header .main__menu__item:hover {
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
-    width: 200px;
-    height: 45px;
-    outline: none;
     border: 1px solid rgba(111, 111, 111, 0.25);
     box-sizing: border-box;
+    padding: 15px 36px;
 }
 
 .burger {
@@ -263,96 +262,6 @@ header .main__menu__item:hover {
     overflow: hidden;
 }
 
-/* .more-article {
-    margin-bottom: 20px;
-}
-
-.container-more-article {
-    margin: 0 auto;
-    max-width: 1300px;
-    background: #404149;
-    border-radius: 40px;
-    padding: 51px 80px 0;
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    max-height: 350px;
-}
-
-.more-article-block img {
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-}
-
-.more-article-block h3 {
-    margin: 0;
-    display: inline-block;
-    vertical-align: middle;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #FFFFFF;
-    margin-left: 10px;
-} 
-
-.more-article-author {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-
-    margin-left: 65px;
-    margin-top: 5px;
-}
-
-.more-article-author span {
-    color: #F7654A;
-}
-
-.more-article-text {
-    margin-top: 60px;
-}
-
-.more-article-text img {
-    float: left;
-    margin: 0 15px 5px 0;
-}
-
-.more-article-text p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-}
-
-.more-article-btn {
-    margin-top: 220px;
-    padding-bottom: 26px;
-    text-align: right;
-}
-
-.more-article-btn a {
-    display: inline-block;
-    background: #F7654A;
-    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-    border-radius: 30px;
-    color: black;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    padding: 12px 45px;
-} */
-
 .scroll-articles {
     margin-top: 50px;
     margin-bottom: 73px;
@@ -367,12 +276,29 @@ header .main__menu__item:hover {
     padding: 28px 79px 80px 48px;
 }
 
-.scroll-articles h3 {
+.scroll-articles a {
+    display: block;
     margin: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     color: #FFFFFF;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-scroll a:hover{
+    color: #F7654A;
+}
+
+.container-scroll span {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    vertical-align: top;
+    display: inline-block;
 }
 
 .scroll-articles-title {
@@ -450,6 +376,10 @@ header .main__menu__item:hover {
     font-weight: normal;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+.scroll-articles-title .scroll:hover a {
+    color: #F7654A;
 }
 
 .swip2 .swiper-scrollbar-drag {

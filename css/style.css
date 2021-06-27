@@ -460,6 +460,10 @@ header .main__menu__item:hover {
     display: inline-block;
 }
 
+.swip4 {
+    display: none;
+}
+
 
 /* -------------6ой блок------------- */
 
@@ -1353,6 +1357,7 @@ body._lock {
         height: 193px;
         margin: 0 9px;
         vertical-align: top;
+        margin-left: 90px;
     }
 
     .container-our-big-project {
@@ -1369,12 +1374,14 @@ body._lock {
         margin: 24px 0 5px 0;
         width: 55px;
         height: 4px;
+        margin-left: 30px;
     }
 
     .our-big-project__card h3 {
         text-align: left;
         font-size: 16px;
         line-height: 20px;
+        margin-left: 30px;
     }
 
     .our-big-project__card p {
@@ -1383,6 +1390,7 @@ body._lock {
         line-height: 16px;
         margin-bottom: 32px;
         max-width: 223px;
+        margin-left: 30px;
     }
 
     .arrow {
@@ -1403,6 +1411,14 @@ body._lock {
     .our-big-progect__arrows {
         margin-top: 20px;
         margin-left: -40px;
+    }
+
+    .our-big-project__cards {
+        display: none;
+    }
+
+    .swip4 {
+        display: block;
     }
 
     /* -----------5ый блок----------- */
@@ -1429,6 +1445,16 @@ body._lock {
 
     .icons-container {
         max-width: 255px;
+    }
+
+    .swip4 .swiper-button-prev::after,
+    .swip4 .swiper-button-next::after {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 5px;
+        width: 40px;
+        padding: 10px;
     }
 
 
@@ -2170,6 +2196,7 @@ body._lock {
         height: 193px;
         margin: 0 9px;
         vertical-align: top;
+        margin-left: 70px;
     }
 
     .container-our-big-project {
@@ -2186,12 +2213,14 @@ body._lock {
         margin: 24px 0 5px 0;
         width: 55px;
         height: 4px;
+        margin-left: 60px;
     }
 
     .our-big-project__card h3 {
         text-align: left;
         font-size: 20px;
         line-height: 20px;
+        margin-left: 60px;
     }
 
     .our-big-project__card p {
@@ -2200,6 +2229,7 @@ body._lock {
         line-height: 20px;
         margin-bottom: 32px;
         max-width: 223px;
+        margin-left: 60px;
     }
 
     .arrow {
@@ -2219,7 +2249,15 @@ body._lock {
 
     .our-big-progect__arrows {
         margin-top: 20px;
-        margin-left: -40px;
+        margin-left: -12px;
+    }
+
+    .our-big-project__cards {
+        display: none;
+    }
+
+    .swip4 {
+        display: block;
     }
 
     /* -----------5ый блок----------- */
@@ -2246,6 +2284,16 @@ body._lock {
 
     .icons-container {
         max-width: 300px;
+    }
+
+    .swip4 .swiper-button-prev::after,
+    .swip4 .swiper-button-next::after {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 5px;
+        width: 40px;
+        padding: 10px;
     }
 
 
@@ -2998,6 +3046,7 @@ body._lock {
         height: 193px;
         margin: 0 9px;
         vertical-align: top;
+        margin-left: 135px;
     }
 
     .container-our-big-project {
@@ -3014,12 +3063,14 @@ body._lock {
         margin: 24px 0 5px 0;
         width: 55px;
         height: 4px;
+        margin-left: 95px;
     }
 
     .our-big-project__card h3 {
         text-align: left;
         font-size: 21px;
         line-height: 20px;
+        margin-left: 95px;
     }
 
     .our-big-project__card p {
@@ -3028,6 +3079,7 @@ body._lock {
         line-height: 21px;
         margin-bottom: 32px;
         max-width: 223px;
+        margin-left: 95px;
     }
 
     .arrow {
@@ -3046,6 +3098,18 @@ body._lock {
     .our-big-progect__arrows {
         margin-top: 20px;
         margin-left: -40px;
+    }
+
+    .our-big-project__cards {
+        display: none;
+    }
+
+    .swip4 {
+        display: block;
+    }
+
+    .swip4-wrapper {
+        margin: 0 auto;
     }
 
     /* -----------5ый блок----------- */
@@ -3079,7 +3143,15 @@ body._lock {
         max-width: 313px;
     }
 
-
+    .swip4 .swiper-button-prev::after,
+    .swip4 .swiper-button-next::after {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 5px;
+        width: 40px;
+        padding: 10px;
+    }
 
     /* ------------6ой блок---------- */
 

@@ -674,6 +674,8 @@ header .main__menu__item:hover {
 
 .swip {
     padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* -----8ой блок -------- */
@@ -1226,6 +1228,7 @@ body._lock {
 
     .swip3 {
         display: block;
+        overflow: hidden;
     }
 
     .swip3 .swiper-button-prev::after,
@@ -1419,6 +1422,7 @@ body._lock {
 
     .swip4 {
         display: block;
+        overflow: hidden;
     }
 
     /* -----------5ый блок----------- */

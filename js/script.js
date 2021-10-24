@@ -11,9 +11,7 @@ new Swiper('.swip', {
         // буллеты
         clickable: true,
         dynamicBullets: true,
-        // renderBullet: function (index, className) {
-        //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-        // },
+        
     },
 
     slidesPerView: 3,
@@ -31,14 +29,6 @@ new Swiper('.swip', {
     speed: 800,
 
     spaceBetween: 30,
-
-    // effect: 'coverflow',
-
-    // coverflowEffect: {
-    //     rotate: 20,
-    //     stretch: 50,
-    //     slideShadow: false,
-    // },
 
     breakpoints: {
         320: {
@@ -88,13 +78,6 @@ new Swiper('.swip3', {
 
     spaceBetween: 30,
 
-    // effect: 'coverflow',
-
-    // coverflowEffect: {
-    //     rotate: 20,
-    //     stretch: 50,
-    //     slideShadow: false,
-    // },
 
     breakpoints: {
         320: {
@@ -143,14 +126,6 @@ new Swiper('.swip4', {
     speed: 800,
 
     spaceBetween: 30,
-
-    // effect: 'coverflow',
-
-    // coverflowEffect: {
-    //     rotate: 20,
-    //     stretch: 50,
-    //     slideShadow: false,
-    // },
 
     breakpoints: {
         320: {
@@ -330,16 +305,6 @@ function openservices(block) {
         document.getElementById('block').style.display = "none";
     }
 }
-
-// function handler(e) {
-//     var el = e.target;
-//     if (el.innerHTML == "Скрыть") {
-//         el.innerHTML = "Все услуги";
-//     } else {
-//         el.innerHTML = "Скрыть";
-//     }
-// }
-
 
 // ПОДРОБНЕЕ
 

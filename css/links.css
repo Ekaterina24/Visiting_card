@@ -1,0 +1,12 @@
+a.number {
+    margin: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #4985FF;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+}

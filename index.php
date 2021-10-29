@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +10,7 @@
 
     <title>Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/links.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -544,8 +547,6 @@
                 <div class="swiper-button-prev swiper-btn-hidden"></div>
                 <div class="swiper-button-next swiper-btn-hidden"></div>
 
-                <!-- <div class="swiper-pagination"></div> -->
-
 
             </div>
 
@@ -1038,161 +1039,50 @@
                 <h2 id="back">Статьи с кейсами</h2>
                 <div class="wrapper-articles-btn">
                     <div class="all-articles">
-                        <a href="second.html#all">Все статьи</a>
+                        <a href="/articles.php#all">Все статьи</a>
                     </div>
                 </div>
                 <div class="swip swiper-container">
                     <div class="swip-wrapper swiper-wrapper">
+
+                        <?php
+                            $connection = mysqli_connect('std-mysql:3306', 'std_1357_articles', '12345678', 'std_1357_articles');
+                            if($connection == false) {
+                                echo "Error!";
+                                echo mysqli_connect_errno();
+                                exit();
+                            }
+
+                            $query = mysqli_query($connection, "SELECT * from articles");
+
+                            while ($article = mysqli_fetch_assoc($query)){?>
                         <div class="swip-slide swiper-slide">
                             <div class="swip-slide-block">
                                 <div class="articles__text">
                                     <div class="articles__text__title">
                                         <img src="images/points.svg" alt="points">
-                                        <h3>Название статьи 1</h3>
+                                        <h3><?php echo $article['name'] ?></h3>
                                     </div>
-                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                        вэб-дизайне. Lorem
-                                        Ipsum
-                                        является
-                                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий
-                                        безымянный
-                                        печатник
-                                        создал большую коллекцию размеров и форм шрифтов.</p>
+                                    <p class="first-text"><?php echo $article['first_text'] ?></p>
+                                <p>Дата публикации: <?php echo $article['created_at'] ?></p>
                                     <div class="wrapper-more">
                                         <div class="more">
-                                            <a href="second.html#more-articles">Подробнее</a>
+                                            <a href="/article.php?id=<?php echo $article['id'] ?>#one">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="articles__article__author">
-                                    Иванов Иван, <span>ООО “Газпром-Арена”</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="swip-slide swiper-slide">
-                            <div class="swip-slide-block">
-                                <div class="articles__text">
-                                    <div class="articles__text__title">
-                                        <img src="images/points.svg" alt="points">
-                                        <h3>Название статьи 2</h3>
-                                    </div>
-                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                        вэб-дизайне. Lorem
-                                        Ipsum
-                                        является
-                                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий
-                                        безымянный
-                                        печатник
-                                        создал большую коллекцию размеров и форм шрифтов.</p>
-                                    <div class="wrapper-more">
-                                        <div class="more">
-                                            <a href="second.html#more-articles">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles__article__author">
-                                    Иванов Иван, <span>ООО “Газпром-Арена”</span>
+                                    <?php echo $article['name_author'] ?>, <span><?php echo $article['company'] ?></span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swip-slide swiper-slide">
-                            <div class="swip-slide-block">
-                                <div class="articles__text">
-                                    <div class="articles__text__title">
-                                        <img src="images/points.svg" alt="points">
-                                        <h3>Название статьи 3</h3>
-                                    </div>
-                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                        вэб-дизайне. Lorem
-                                        Ipsum
-                                        является
-                                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий
-                                        безымянный
-                                        печатник
-                                        создал большую коллекцию размеров и форм шрифтов.</p>
-                                    <div class="wrapper-more">
-                                        <div class="more">
-                                            <a href="second.html#more-articles">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles__article__author">
-                                    Иванов Иван, <span>ООО “Газпром-Арена”</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swip-slide swiper-slide">
-                            <div class="swip-slide-block">
-                                <div class="articles__text">
-                                    <div class="articles__text__title">
-                                        <img src="images/points.svg" alt="points">
-                                        <h3>Название статьи 4</h3>
-                                    </div>
-                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                        вэб-дизайне. Lorem
-                                        Ipsum
-                                        является
-                                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий
-                                        безымянный
-                                        печатник
-                                        создал большую коллекцию размеров и форм шрифтов.</p>
-                                    <div class="wrapper-more">
-                                        <div class="more">
-                                            <a href="second.html#more-articles">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles__article__author">
-                                    Иванов Иван, <span>ООО “Газпром-Арена”</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swip-slide swiper-slide">
-                            <div class="swip-slide-block">
-                                <div class="articles__text">
-                                    <div class="articles__text__title">
-                                        <img src="images/points.svg" alt="points">
-                                        <h3>Название статьи 5</h3>
-                                    </div>
-                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                        вэб-дизайне. Lorem
-                                        Ipsum
-                                        является
-                                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий
-                                        безымянный
-                                        печатник
-                                        создал большую коллекцию размеров и форм шрифтов.</p>
-                                    <div class="wrapper-more">
-                                        <div class="more">
-                                            <a href="second.html#more-articles">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles__article__author">
-                                    Иванов Иван, <span>ООО “Газпром-Арена”</span>
-                                </div>
-                            </div>
-                        </div>
-
-
+                            <?php } ?>
                     </div>
 
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <div class="swiper-pagination"></div>
+<!--                    <div class="swiper-pagination"></div>-->
 
 
                 </div>

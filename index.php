@@ -22,9 +22,9 @@
     <div class="main">
         <header class="header1">
             <div class="container">
-                <div class="main-img">
+                <a href="index.php" class="main-img">
                     <img src="images/Bez_imeni-1 1.svg" alt="icon">
-                </div>
+                </a>
 
                 <div class="menu">
                     <a class="main__menu__item" href="#main">Главная</a>
@@ -50,9 +50,9 @@
         <header class="header2">
             <div class="container">
                 <div class="main-menu">
-                    <div class="main-img">
+                    <a href="index.php" class="main-img">
                         <img src="images/Bez_imeni-1 1.svg" alt="icon">
-                    </div>
+                    </a>
 
                     <div class="menu__icon">
                         <span></span>
@@ -551,7 +551,7 @@
             </div>
 
             <div class="our-work-items second-block-services" id="block" style="display: none;">
-                <div class="our-work-item">
+                <div class="our-work-item hidden">
                     <svg width="110" height="101" viewBox="0 0 110 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M109.5 50.2133C109.5 77.5938 85.1439 99.867 55 99.867C24.8561 99.867 0.5 77.5938 0.5 50.2133C0.5 22.8327 24.8561 0.55957 55 0.55957C85.1439 0.55957 109.5 22.8327 109.5 50.2133Z"

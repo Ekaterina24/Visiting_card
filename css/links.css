@@ -3,10 +3,26 @@ a.number {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: #4985FF;
+    background-color: #F7654A;
     color: white;
     display: inline-block;
     text-align: center;
     padding-top: 5px;
     box-sizing: border-box;
+}
+
+.articles-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articles-container .articles__text {
+    margin: 20px;
+}
+
+.pagin {
+    text-align: center;
 }

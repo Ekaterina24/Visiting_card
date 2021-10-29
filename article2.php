@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Статьи</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/links.css" />
+    <link rel="stylesheet" href="css/article.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -29,8 +29,6 @@
                 <a class="main__menu__item" href="index.php#reviews">Отзывы</a>
                 <a class="main__menu__item" href="index.php#articles">Статьи</a>
                 <a class="main__menu__item" href="index.php#contacts">Контакты</a>
-
-
 
                 <div class="main__phone">
                     <a href="#">+7(987)234-65-98</a>
@@ -80,7 +78,7 @@
             <span>Передовая IT студия</span>
             <h1>Мы создаем легкие решения
                 сложных задач и проблем</h1>
-            <a data-goto="index.php#projects" class="main__menu__item" href="#">Наши проекты</a>
+            <a data-goto="#projects" class="main__menu__item" href="index.php#projects">Наши проекты</a>
 
         </div>
     </div>
@@ -89,80 +87,30 @@
 </div>
 
 <div class="fon"></div>
-<div id="all" class="articles-container">
-<?php
-$connection = mysqli_connect('std-mysql:3306', 'std_1357_articles', '12345678', 'std_1357_articles');
-if($connection == false) {
-    echo "Error!";
-    echo mysqli_connect_errno();
-    exit();
-}
-
-if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-} else {
-    $page = 1;
-}
-
-$notesOnPage = 3;
-$from = ($page - 1) * $notesOnPage;
-$count_query = mysqli_query($connection, "SELECT COUNT(*) from articles");
-$count_array = $count_query->fetch_array(MYSQLI_NUM);
-$count = $count_array[0];
-$lenght = ceil($count / $notesOnPage);
-
-$query = mysqli_query($connection, "SELECT * from articles WHERE id > 0 LIMIT $from, $notesOnPage");
-
-function Pagination($lenght, $page) {
-    if ($lenght < 5) {
-        foreach (range(1, $lenght) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
+    <?php
+    $connection = mysqli_connect('std-mysql:3306', 'std_1357_articles', '12345678', 'std_1357_articles');
+    if($connection == false) {
+        echo "Error!";
+        echo mysqli_connect_errno();
+        exit();
     }
-
-    if ($lenght > 4 && $page < 5) {
-        foreach (range(1, 5) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
-    }
-
-    if ($lenght - 5 < 5 && $page > 5) {
-        foreach (range($lenght - 4, $lenght) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
-    }
-
-    if ($lenght > 4 && $lenght - 5 < 5 && $page == 5) {
-        foreach (range($page - 2, $lenght) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
-    }
-
-    if ($lenght > 4 && $lenght - 5 > 5 && $page >= 5 && $page <= $lenght - 4) {
-        foreach (range($page - 2, $page + 2) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
-    }
-
-    if ($lenght > 4 && $lenght - 5 > 5 && $page > $lenght - 4) {
-        foreach (range($lenght - 4, $lenght) as $p) echo '<a class="number" href="?page='.$p.'#all">'.$p.'</a>';
-    }
-}
-while ($article = mysqli_fetch_assoc($query)){?>
-        <div>
-            <div class="articles__text">
-                <div class="articles__text__title">
-                    <img src="images/points.svg" alt="points">
-                    <h3><?php echo $article['name'] ?></h3>
-                </div>
-                <p class="first-text"><?php echo $article['first_text'] ?></p>
-                <p>Дата публикации: <?php echo $article['created_at'] ?></p>
-                <div class="wrapper-more">
-                    <div class="more">
-                        <a href="/article2.php?id=<?php echo $article['id'] ?>#one">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="articles__article__author">
-                <?php echo $article['name_author'] ?>, <span><?php echo $article['company'] ?></span>
-            </div>
+    $result = $_GET['id'];
+    $query = mysqli_query($connection, "SELECT * from articles WHERE id=$result");
+    $article = mysqli_fetch_assoc($query);
+    ?>
+<div class="one-article">
+    <div class="container-article">
+        <h3 id="one"><?php echo $article['name'] ?></h3>
+        <p class="text"><?php echo $article['text'] ?></p>
+        <p>Дата публикации: <?php echo $article['created_at'] ?></p>
+        <div class="articles__article__author">
+            <?php echo $article['name_author'] ?>, <span><?php echo $article['company'] ?></span>
         </div>
-<?php } ?>
-</div>
-<div class="pagin">
-    <?php Pagination($lenght, $page); ?>
+        <div class="button">
+            <a class="back" href="articles.php#all">Назад</a>
+        </div>
+    </div>
 </div>
 <script src="js/second.js"></script>
 </body>
 </html>
-

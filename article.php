@@ -17,20 +17,18 @@
 <div class="main">
     <header class="header1">
         <div class="container">
-            <div class="main-img">
+            <a href="index.php" class="main-img">
                 <img src="images/Bez_imeni-1 1.svg" alt="icon">
-            </div>
+            </a>
 
             <div class="menu">
-                <a class="main__menu__item" href="#main">Главная</a>
-                <a class="main__menu__item" href="#services">Услуги</a>
-                <a class="main__menu__item" href="#about-us">О нас</a>
-                <a class="main__menu__item" href="#projects">Наши проекты</a>
-                <a class="main__menu__item" href="#reviews">Отзывы</a>
-                <a class="main__menu__item" href="#articles">Статьи</a>
-                <a class="main__menu__item" href="#contacts">Контакты</a>
-
-
+                <a class="main__menu__item" href="index.php#main">Главная</a>
+                <a class="main__menu__item" href="index.php#services">Услуги</a>
+                <a class="main__menu__item" href="index.php#about-us">О нас</a>
+                <a class="main__menu__item" href="index.php#projects">Наши проекты</a>
+                <a class="main__menu__item" href="index.php#reviews">Отзывы</a>
+                <a class="main__menu__item" href="index.php#articles">Статьи</a>
+                <a class="main__menu__item" href="index.php#contacts">Контакты</a>
 
                 <div class="main__phone">
                     <a href="#">+7(987)234-65-98</a>
@@ -45,9 +43,9 @@
     <header class="header2">
         <div class="container">
             <div class="main-menu">
-                <div class="main-img">
+                <a href="index.php" class="main-img">
                     <img src="images/Bez_imeni-1 1.svg" alt="icon">
-                </div>
+                </a>
 
                 <div class="menu__icon">
                     <span></span>
@@ -56,13 +54,13 @@
 
             <div class="menu__body">
                 <div class="menu-list">
-                    <a data-goto="#main" class="main__menu__item" href="#">Главная</a>
-                    <a data-goto="#services" class="main__menu__item" href="#">Услуги</a>
-                    <a data-goto="#about-us" class="main__menu__item" href="#">О нас</a>
-                    <a data-goto="#projects" class="main__menu__item" href="#">Наши проекты</a>
-                    <a data-goto="#reviews" class="main__menu__item" href="#">Отзывы</a>
-                    <a data-goto="#articles" class="main__menu__item" href="#">Статьи</a>
-                    <a data-goto="#contacts" class="main__menu__item" href="#">Контакты</a>
+                    <a data-goto="index.php#main" class="main__menu__item" href="#">Главная</a>
+                    <a data-goto="index.php#services" class="main__menu__item" href="#">Услуги</a>
+                    <a data-goto="index.php#about-us" class="main__menu__item" href="#">О нас</a>
+                    <a data-goto="index.php#projects" class="main__menu__item" href="#">Наши проекты</a>
+                    <a data-goto="index.php#reviews" class="main__menu__item" href="#">Отзывы</a>
+                    <a data-goto="index.php#articles" class="main__menu__item" href="#">Статьи</a>
+                    <a data-goto="index.php#contacts" class="main__menu__item" href="#">Контакты</a>
                 </div>
 
                 <div class="main__phone">
@@ -80,7 +78,7 @@
             <span>Передовая IT студия</span>
             <h1>Мы создаем легкие решения
                 сложных задач и проблем</h1>
-            <a data-goto="#projects" class="main__menu__item" href="#">Наши проекты</a>
+            <a data-goto="#projects" class="main__menu__item" href="index.php#projects">Наши проекты</a>
 
         </div>
     </div>
@@ -100,12 +98,19 @@
     $query = mysqli_query($connection, "SELECT * from articles WHERE id=$result");
     $article = mysqli_fetch_assoc($query);
     ?>
-<h3 id="one"><?php echo $article['name'] ?></h3>
-<p class="text"><?php echo $article['text'] ?></p>
-<p>Дата публикации: <?php echo $article['created_at'] ?></p>
-<div class="articles__article__author">
-    <?php echo $article['name_author'] ?>, <span><?php echo $article['company'] ?></span>
+<div class="one-article">
+    <div class="container-article">
+        <h3 id="one"><?php echo $article['name'] ?></h3>
+        <p class="text"><?php echo $article['text'] ?></p>
+        <p>Дата публикации: <?php echo $article['created_at'] ?></p>
+        <div class="articles__article__author">
+            <?php echo $article['name_author'] ?>, <span><?php echo $article['company'] ?></span>
+        </div>
+        <div class="button">
+            <a class="back" href="index.php#articles">Назад</a>
+        </div>
+    </div>
 </div>
-<hr>
+<script src="js/second.js"></script>
 </body>
 </html>
